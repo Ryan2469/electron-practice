@@ -1,0 +1,29 @@
+{
+  "name": "electron-memo",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "scripts": {
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps",
+    "start": "vue-cli-service electron:serve ./src/renderer/main.ts"
+  },
+  "main": "background.js",
+  "dependencies": {
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {
+    "@types/electron-devtools-installer": "^2.2.0",
+    "@vue/cli-plugin-typescript": "^4.5.9",
+    "@vue/cli-service": "^4.5.9",
+    "electron": "^11.1.0",
+    "electron-devtools-installer": "^3.1.0",
+    "typescript": "^4.1.3",
+    "vue-cli-plugin-electron-builder": "~2.1.1",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "keywords": [],
+  "license": "ISC"
+}
